@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        /* Add your CSS code here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tab-header">
+            <button class="tab-btn" onclick="changeTab(event, 'personalDetails')">Personal Details</button>
+            <button class="tab-btn" onclick="changeTab(event, 'jobDetails')">Job Details</button>
+            <button class="tab-btn" onclick="changeTab(event, 'contactDetails')">Contact Details</button>
+        </div>
+        <div id="personalDetails" class="tab-item">
+            <div class="tab-content">
+                <form>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required><br><br>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required><br><br>
+
+                    <label for="dateOfBirth">Date of Birth:</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" required><br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <input type="button" value="Next" onclick="changeTab(event, 'jobDetails')">
+                </form>
+            </div>
+        </div>
+        <!-- Add more tab items for other tabs -->
+    </div>
+    
+</body>
+</html>
